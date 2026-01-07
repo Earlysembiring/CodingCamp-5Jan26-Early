@@ -171,8 +171,7 @@ body {
 }
 
 .todo-table tbody tr:hover td {
-    background: #F2A1B3
-;
+   
 }
 
 .empty-row td {
