@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>To Do List</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="todo-app">
+            <h2>To-Do List</h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add Todo">
+                <input type="date" id="date-input" placeholder="mm/dd/yyyy">
+                <button onclick="addTask()">Add</button>
+              
+            </div>
+             <br>
+            <div class="actions-row">
+                <label for="filter-select">Filter</label>
+                <select id="filter-select" class="filter-select" onchange="onFilterChange()">
+                    <option value="all">All</option>
+                    <option value="active">Active</option>
+                    <option value="done">Done</option>
+                </select>
+                <button class="delete" onclick="deleteAll()">Delete All</button>
+            </div>
+
+            <table class="todo-table">
+                <thead>
+                    <tr>
+                        <th>Task</th>
+                        <th>Due Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="list-container"></tbody>
+            </table>
+            <script src="js/script.js"></script>
+        </div>
+    </div>
 </body>
 </html>

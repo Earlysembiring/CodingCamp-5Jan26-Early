@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins", sans-serif;
+    background: #f7f7f7;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 16px;
+    background: linear-gradient(135deg, #fce4ec, #f3e5f5);
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 760px;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 16px 60px rgba(0, 0, 0, 0.1);
+}
+
+.todo-app h2 {
+    margin: 0 0 16px;
+    font-size: 30px;
+    color: #333;
+}
+
+.row {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.row input {
+    flex: 1;
+    padding: 10px 12px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.row button {
+    padding: 10px 18px;
+    border: none;
+    background:#F06292;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.row button:hover {
+    background: #F48FB1 ;
+
+
+}
+
+.filter-btn {
+    margin-top: 10px;
+    padding: 10px 16px;
+    border: none;
+    background: #556cd6;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(85, 108, 214, 0.3);
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.filter-btn:hover {
+    background: #4557b8;
+}
+
+.filter-btn:active {
+    transform: translateY(1px);
+}
+
+.delete-btn {
+    margin-top: 10px;
+    padding: 10px 16px;
+    border: none;
+    background:#F28B82; /* red */
+    color: #fff;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(229, 57, 53, 0.25);
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.delete-btn:hover { background: #d32f2f; }
+.delete-btn:active { transform: translateY(1px); }
+
+
+.delete {
+    margin-top: 10px;
+    padding: 10px 16px;
+    border: none;
+    background: #E53935;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(85, 108, 214, 0.3);
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.delete:hover {
+    background: #F28B82;
+}
+
+.delete:active {
+    transform: translateY(1px);
+}
+
+/* Align action buttons: Filter left, Delete All right */
+.actions-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 8px 0 12px;
+}
+
+.actions-row .delete {
+    margin-left: auto; /* push to far right */
+}
+
+/* Table list area (dark style) */
+.todo-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 12px;
+    background:#F48FB1;
+    background: ;
+    border: 1px solid #FFFFFF;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.todo-table thead th {
+    text-align: left;
+    padding: 12px 14px;
+    background:#FF5C8A
+;
+    color: #FFFFFF; /* light indigo */
+    font-weight: 600;
+    font-size: 14px;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.todo-table tbody td {
+    padding: 12px 14px;
+    color: #FFFFFF; /* slate-200 */
+    font-size: 14px;
+    border-top: 1px solid #FFFFFF;
+}
+
+.todo-table tbody tr:hover td {
+    background: #F2A1B3
+;
+}
+
+.empty-row td {
+    text-align: center;
+    color: #cbd5e1;
+    padding: 16px 14px;
+}
