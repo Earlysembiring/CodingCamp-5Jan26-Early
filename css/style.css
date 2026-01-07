@@ -167,7 +167,7 @@ body {
     padding: 12px 14px;
     color: #FFFFFF; /* slate-200 */
     font-size: 14px;
-    border-top: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF; 
 }
 
 .todo-table tbody tr:hover td {
